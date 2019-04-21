@@ -1,0 +1,46 @@
+<div class="home-page">
+  <section class="hero-section w-100 p-relative">
+    <p *ngIf="heroSectionHeroModel" class="hero-name"> {{ heroSectionHeroModel.heading }} </p>
+    <div class="grid-container p-relative">
+      <div class="hero-offer w-100 content-row-start content-align-start">
+        <div class="info w-50 content-column-start content-align-start">
+          <p [ngClass]="{'offer-heading-skeleton' : !heroSectionHeroModel}" class="offer-heading typo-primary-black-italic color-black typo-upper">{{ heroSectionHeroModel ? heroSectionHeroModel.heading : ''}}</p>
+          <p [ngClass]="{'offer-sub-heading-skeleton' : !heroSectionHeroModel}" class="offer-sub-heading typo-primary-light-italic color-black typo-upper">{{ heroSectionHeroModel ? heroSectionHeroModel.subHeading : '' }}</p>
+          <p [ngClass]="{'d-none' : !heroSectionHeroModel}" class="offer-description typo-primary-regular typo-sm color-black">{{ heroSectionHeroModel ? heroSectionHeroModel.description : '' }}</p>
+          <div [ngClass]="{'d-none' : heroSectionHeroModel}" class="offer-description-skeleton content-column-start content-align-start">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="offer-image content-row-center w-50">
+          <img *ngIf="heroSectionHeroModel" class="offer-img" [src]="heroSectionHeroModel.image" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="new-products-section w-100 p-relative">
+    <div class="grid-container">
+      <div class="products w-100 content-column-start bg-white">
+        <div class="products-head w-100 content-row-start">
+          <p class="typo-primary-black-italic typo-lg color-black-alt typo-capital">new products</p>
+          <div class="controls self-end">
+            <img [ngClass]="{'d-none' : newProductsSectionLeftArrowActivity}" class="clickable-false selectable-false draggable-false" [src]="ICON.ARROW_LEFT_DISABLED" alt="...">
+            <img [ngClass]="{'d-none' : !newProductsSectionLeftArrowActivity}" class="clickable-true selectable-false draggable-false" [src]="ICON.ARROW_LEFT_ACTIVE" alt="...">
+            <img [ngClass]="{'d-none' : newProductsSectionRightArrowActivity}" class="clickable-false selectable-false draggable-false" [src]="ICON.ARROW_RIGHT_DISABLED" alt="...">
+            <img [ngClass]="{'d-none' : !newProductsSectionRightArrowActivity}" class="clickable-true selectable-false draggable-false" [src]="ICON.ARROW_RIGHT_ACTIVE" alt="...">
+          </div>
+        </div>
+        <div class="products-content content-row-start w-100">
+          <div class="super-item-container" *ngFor="let item of newProductsSectionProductsArray"><super-item [item]="item"></super-item></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Offer Component -->
+  <section class="bestseller-products-section w-100 p-relative"></section>
+  <section class="featured-products-section w-100 p-relative"></section>
+  <section class="brands-carousel w-100 p-relative"></section>
+  <!-- About Component -->
+  <!-- Footer Component -->
+</div>

@@ -1,0 +1,90 @@
+[
+  {
+    "id" : "1369",
+    "name" : "breach snowboard jacket",
+    "price" : 991.35,
+    "oldPrice" : null,
+    "colorId" : "05",
+    "sizeId" : "01",
+    "newBadge" : false,
+    "hotBadge" : false,
+    "image" : "./assets/image/local-storage/breach-snowboard-jacket.jpg"
+  },
+  {
+    "id" : "1370",
+    "name" : "moto-9 carbon",
+    "price" : 549.95,
+    "oldPrice" : null,
+    "colorId" : "03",
+    "sizeId" : "01",
+    "newBadge" : false,
+    "hotBadge" : false,
+    "image" : "./assets/image/local-storage/moto-9-carbon.jpg"
+  },
+  {
+    "id" : "1371",
+    "name" : "encore snowboard jacket",
+    "price" : 770.15,
+    "oldPrice" : 1270.15,
+    "colorId" : "02",
+    "sizeId" : "01",
+    "newBadge" : false,
+    "hotBadge" : false,
+    "image" : "./assets/image/local-storage/encore-snowboard-jacket.jpg"
+  },
+  {
+    "id" : "1372",
+    "name" : "white collection tracker snowboard jacket",
+    "price" : 1550.35,
+    "oldPrice" : null,
+    "colorId" : "00",
+    "sizeId" : "00",
+    "newBadge" : false,
+    "hotBadge" : false,
+    "image" : "./assets/image/local-storage/white-collection-snowboard-jacket.jpg"
+  },
+  {
+    "id" : "1373",
+    "name" : "2L swash snowboard jacket",
+    "price" : 150.29,
+    "oldPrice" : null,
+    "colorId" : "01",
+    "sizeId" : "03",
+    "newBadge" : false,
+    "hotBadge" : false,
+    "image" : "./assets/image/local-storage/2l-swash-snowboard-jacket.jpg"
+  },
+  {
+    "id" : "1374",
+    "name" : "encore snowboard jacket",
+    "price" : 770.15,
+    "oldPrice" : null,
+    "colorId" : "02",
+    "sizeId" : "01",
+    "newBadge" : false,
+    "hotBadge" : true,
+    "image" : "./assets/image/local-storage/encore-snowboard-jacket-2.jpg"
+  },
+  {
+    "id" : "1375",
+    "name" : "giant anthem mountain fiberglass",
+    "price" : 1999.99,
+    "oldPrice" : 2499.99,
+    "colorId" : "00",
+    "sizeId" : "05",
+    "newBadge" : true,
+    "hotBadge" : true,
+    "image" : "./assets/image/local-storage/giant-anthem-mountain-fiberglass.jpg"
+  },
+  {
+    "id" : "1376",
+    "name" : "leatt adventure body protector",
+    "price" : 179.99,
+    "oldPrice" : null,
+    "colorId" : "01",
+    "sizeId" : "01",
+    "newBadge" : true,
+    "hotBadge" : false,
+    "image" : "./assets/image/local-storage/leatt-adventure-body-protector.jpg"
+  }
+]

@@ -1,0 +1,22 @@
+<div class="products-item p-relative content-column-start">
+  <div class="product-image w-100 p-relative content-row-center" [ngStyle]="{'background-color' : item.image ? '#ffffff' : '#d2d3d5' }">
+    <span [ngClass]="{'d-none' : !item.newBadge}" class="badge new-badge"></span>
+    <span [ngClass]="{'d-none' : !item.hotBadge}" class="badge hot-badge"></span>
+    <img [src]="item.image ? item.image : ''" alt="">
+    <div *ngIf="item.image" class="p-absolute product-view w-100 h-100 content-row-center d-none">
+      <p (click)="quickViewSelectMethod()" class="typo-primary-black-italic quick-view clickable-true selectable-false typo-md color-black bg-white typo-capital object-ico">quick view</p>
+    </div>
+  </div>
+  <div class="product-info w-100 content-row-start content-align-start bg-white">
+    <p [ngClass]="{'d-none' : !item.name}" class="item-name clickable-true typo-primary-bold typo-sm typo-capital">{{ item.name }}</p>
+    <div [ngClass]="{'d-none' : item.name}" class="item-name-skeleton content-column-start content-align-start">
+      <span></span>
+      <span></span>
+    </div>
+    <div [ngClass]="{'d-none' : !item.price}" class="price content-column-start content-align-end self-end">
+      <div class="fresh typo-primary-bold-italic typo-md color-aqua">{{ item.price }}</div>
+      <div [ngClass]="{'d-none' : !item.oldPrice}" class="old typo-primary-bold-italic typo-sm color-darkgray">1256.75</div>
+    </div>
+    <div [ngClass]="{'d-none' : item.price}" class="price-skeleton self-end"></div>
+  </div>
+</div>

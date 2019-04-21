@@ -1,0 +1,162 @@
+.hero-section {
+  padding-top: 240px;
+
+  height: 720px;
+
+  overflow: hidden;
+
+  background-color: #d0d0d0;
+  background-image: url("../../../assets/image/decor/mountain_1920.jpg");
+}
+.hero-section:before {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  content: '';
+
+  background: #b3c6cd;
+  background: -moz-linear-gradient(top, #b3c6cd 0%, #f8f9f9 100%);
+  background: -webkit-linear-gradient(top, #b3c6cd 0%,#f8f9f9 100%);
+  background: linear-gradient(to bottom, #b3c6cd 0%,#f8f9f9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2d5dc', endColorstr='#f8f9f9',GradientType=0 );
+
+  opacity: 0.85;
+}
+.hero-section .info {
+  padding-top: 45px;
+}
+.hero-section .hero-name {
+  position: absolute;
+
+  left: -72px;
+  bottom: 60px;
+
+  content: "THE FULL-SCREEN";
+
+  font-family: 'Bender-Black-Italic', sans-serif;
+  font-size: 320px;
+  color: #000;
+
+  overflow: auto;
+  text-wrap: normal;
+  white-space: nowrap;
+  text-transform: uppercase;
+
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-drag: none;
+
+  opacity: 0.15;
+}
+.hero-section .offer-heading {
+  font-size: 72px;
+}
+.hero-section .offer-heading-skeleton {
+  min-width: 500px;
+  min-height: 70px;
+
+  background-color: #e7e7e7;
+
+  border-radius: 2px;
+}
+.hero-section .offer-sub-heading {
+  font-size: 72px;
+  line-height: 35px;
+}
+.hero-section .offer-sub-heading-skeleton {
+  margin-top: 5px;
+
+  min-width: 500px;
+  min-height: 70px;
+
+  background-color: #e7e7e7;
+
+  border-radius: 2px;
+}
+.hero-section .offer-description {
+  margin-top: 45px;
+
+  max-width: 520px;
+
+  line-height: 20px;
+  white-space: pre-wrap;
+}
+.hero-section .offer-description-skeleton {
+  margin-top: 30px;
+
+  width: 520px;
+  height: auto;
+}
+.hero-section .offer-description-skeleton span {
+  margin-bottom: 8px;
+
+  width: 450px;
+  height: 16px;
+
+  background-color: #e7e7e7;
+
+  border-radius: 2px;
+}
+.hero-section .offer-description-skeleton span:nth-child(2) {
+  width: 500px;
+}
+.hero-section .offer-description-skeleton span:first-child {
+  width: 500px;
+}
+.hero-section .offer-image .offer-img {
+  max-width: 320px;
+
+  border: none !important;
+  outline: none !important;
+}
+.hero-section .offer-image .offer-img-skeleton {
+  width: 280px;
+  height: 280px;
+
+  border-radius: 100%;
+
+
+  background-color: #e7e7e7;
+}
+
+.new-products-section {
+  width: auto;
+  height: auto;
+}
+.new-products-section .products {
+  margin-top: -75px;
+
+  min-height: 725px;
+
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+.new-products-section .products .products-head {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  height: 75px;
+}
+.new-products-section .products .products-head .controls {
+  width: 38px;
+
+  display: flex;
+  justify-content: space-between !important;
+}
+.new-products-section .products .products-content {
+  flex-wrap: wrap;
+}
+.new-products-section .products .products-content .super-item-container {
+  width: 292.5px;
+  height: 325px;
+
+  border-right: 2px solid #f6f6f6;
+  border-top: 2px solid #f6f6f6;
+}
+.new-products-section .products .products-content .super-item-container:nth-child(4n) {
+  border-right: none !important;
+}

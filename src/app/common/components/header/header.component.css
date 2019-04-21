@@ -1,0 +1,171 @@
+header {
+  left: 50%;
+  top: 30px;
+
+  transform: translateX(-50%);
+
+  width: 1170px;
+  height: 120px;
+
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+
+  z-index: 99;
+}
+.brand {
+  width: 170px;
+  height: 120px;
+}
+.brand p:last-child {
+  letter-spacing: 1px;
+}
+nav {
+  flex: 1;
+}
+nav > div {
+  height: calc(100% / 2);
+}
+nav > div:first-child {
+  padding-right: 20px;
+
+  border-bottom: 1px solid #f1f1f1;
+}
+.menu-btn {
+  display: none;
+}
+.menu-btn p {
+  margin-left: 15px;
+}
+.page p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.static {
+  border-left: 1px solid #f1f1f1;
+}
+.page:hover {
+  background-color: #000000 !important;
+}
+.page:hover p {
+  color: #ffffff !important;
+}
+.settings img {
+  margin-left: 5px;
+}
+.settings .language {
+  margin-left: 15px !important;
+}
+.settings .settings-dropdown {
+  right: 0;
+  top: 25px;
+
+  background-color: rgba(0,0,0,0.95);
+}
+.settings .settings-dropdown:before   {
+  position: absolute;
+
+  left: 50%;
+  top: -5px;
+
+  transform: translateX(-50%);
+
+  content: '';
+
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+
+  border-bottom: 5px solid rgba(0,0,0,0.95);
+}
+.settings .settings-dropdown li {
+  padding-left: 5px;
+  padding-right: 5px;
+
+  height: 30px;
+}
+.settings .settings-dropdown li:hover {
+  background-color: #333333;
+}
+.settings .currency .settings-dropdown {
+  min-width: 90px;
+}
+.settings .language .settings-dropdown {
+  min-width: 90px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+.search {
+  padding: 15px;
+}
+.search .cat-dropdown {
+  padding-left: 15px;
+  padding-right: 13px;
+
+  width: 115px;
+
+  border-right: 1px solid #d0d0d0;
+}
+.search .cat-dropdown p {
+  width: 70px;
+}
+.search .cat-dropdown .cat-dropdown-list {
+  width: calc(100% + 1px) !important;
+
+  left: 0;
+  top: 30px;
+
+  border-right: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  border-left: 1px solid #d0d0d0;
+}
+.search .cat-dropdown .cat-dropdown-list li {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  height: 30px;
+}
+.search .cat-dropdown .cat-dropdown-list li:hover {
+  background-color: #17c7be;
+  color: #fff !important;
+}
+.search input {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  width: 370px;
+}
+.search .result {
+  padding-right: 15px;
+}
+.search .result img {
+  margin-left: 15px;
+
+  width: 9px;
+}
+.search-btn {
+  width: 34px;
+  height: 34px;
+}
+.search-btn img {
+  width: 17px;
+}
+.wishlist {
+  margin-right: auto;
+}
+.login {
+
+}
+.cart {
+  padding: 15px;
+  margin-right: 0 !important;
+  margin-left: 15px !important;
+
+  width: 172px;
+
+  background-image: url("../../../../assets/image/decor/cart.png");
+  background-repeat: no-repeat;
+  background-position-x: 120px;
+  background-position-y: center;
+}

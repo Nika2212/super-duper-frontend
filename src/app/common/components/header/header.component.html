@@ -1,0 +1,60 @@
+<header class="p-absolute bg-white content-row-start">
+  <div class="brand content-column-center bg-aqua clickable-true selectable-false draggable-false">
+    <p class="typo-primary-black typo-lg color-white typo-upper">super</p>
+    <p class="typo-primary-light typo-lg color-white typo-upper">duper</p>
+  </div>
+  <nav class="content-column-start h-100">
+    <div class="w-100 content-row-start">
+      <div class="pages content-row-start h-100">
+        <div *ngFor="let category of categoryArray" class="page h-100 content-row-center clickable-true selectable-false"><p class="typo-primary-black typo-sm color-black typo-upper">{{ category.categoryName }}</p></div>
+        <div class="page static h-100 content-row-center clickable-true selectable-false"><p class="typo-primary-black typo-sm color-black typo-upper">about</p></div>
+        <div class="page h-100 content-row-center clickable-true selectable-false"><p class="typo-primary-black typo-sm color-black typo-upper">contact</p></div>
+      </div>
+      <div class="settings content-row-start h-100 self-end">
+        <div class="currency content-row-start clickable-true p-relative" (click)="toggleCurrencyDropdown()">
+          <p class="typo-primary-regular typo-sm color-black-alt typo-capital selectable-false">{{ selectedCurrency.currencyName }}</p>
+          <img [src]="ICON.ARROW_DOWN" alt="..." [ngClass]="{'object-180' : currencyDropdownState}">
+          <ul class="settings-dropdown p-absolute content-column-start" [ngClass]="{'d-none' : !currencyDropdownState}">
+            <li *ngFor="let currency of currencyArray" class="w-100 content-row-center typo-primary-regular typo-sm color-white typo-capital" (click)="selectCurrencyMethod(currency)">{{ currency.currencyName }}</li>
+          </ul>
+        </div>
+        <div class="language content-row-start clickable-true p-relative" (click)="toggleLanguageDropdown()">
+          <p class="typo-primary-regular typo-sm color-black-alt typo-upper">{{ selectedLanguage.languageDomain }}</p>
+          <img [src]="ICON.ARROW_DOWN" alt="..." [ngClass]="{'object-180' : languageDropdownState}">
+          <ul class="settings-dropdown p-absolute content-column-start" [ngClass]="{'d-none' : !languageDropdownState}">
+            <li *ngFor="let language of languageArray" class="w-100 content-row-center typo-primary-regular typo-sm color-white typo-capital" (click)="selectLanguageMethod(language)">{{ language.languageName }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 content-row-start">
+      <div class="search content-row-start h-100">
+        <div class="cat-dropdown h-100 content-row-start bg-lightgray clickable-true selectable-false p-relative" (click)="toggleCategoryDropdown()">
+          <p class="typo-primary-regular typo-sm color-black typo-capital typo-overflow">{{ selectedCategory.categoryName }}</p>
+          <img class="self-end" [src]="ICON.ARROW_DOWN" alt="..." [ngClass]="{'object-180' : categoryDropdownState}">
+          <ul class="cat-dropdown-list p-absolute bg-white content-column-start w-100" [ngClass]="{'d-none' : !categoryDropdownState}">
+            <li *ngFor="let category of categoryArray" (click)="selectCategoryMethod(category)" class="w-100 typo-primary-regular typo-sm color-black typo-capital content-column-center content-align-start">{{ category.categoryName }}</li>
+          </ul>
+        </div>
+        <input #searchInputReference [(ngModel)]="searchInputValue" class="h-100 typo-primary-regular-italic typo-sm color-darkgray typo-capital bg-lightgray" type="text" placeholder="i want ___">
+        <div class="result content-row-start h-100 bg-lightgray">
+          <p class="typo-primary-regular typo-sm color-darkgray">87 results</p>
+          <img class="clickable-true selectable-false draggable-false" [src]="ICON.REMOVE" alt="..." (click)="clearSearchField()">
+        </div>
+        <div class="search-btn content-row-center bg-aqua h-100 clickable-true">
+          <img [src]="ICON.SEARCH" alt="...">
+        </div>
+      </div>
+      <div class="login clickable-true selectable-false self-end">
+        <p class="typo-primary-regular typo-sm color-black typo-capital">login</p>
+      </div>
+      <div class="wishlist clickable-true selectable-false self-end">
+        <p class="typo-primary-regular typo-sm color-black typo-capital">wishlist (0)</p>
+      </div>
+      <div class="cart h-100 content-column-start content-align-start bg-black self-end clickable-true selectable-false">
+        <p class="price typo-primary-black-italic typo-md color-white">$945.99</p>
+        <p class="typo-primary-regular typo-xs color-darkgray">2 items</p>
+      </div>
+    </div>
+  </nav>
+</header>

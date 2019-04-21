@@ -1,0 +1,65 @@
+{
+  "id" : "0000",
+  "availableColors" : [
+    {
+      "id" : "00",
+      "color" : "#333333",
+      "image" : "#"
+    },
+    {
+      "id" : "01",
+      "color" : "#e7e7e7",
+      "image" : "#"
+    },
+    {
+      "id" : "02",
+      "color" : "#7B1FA2",
+      "image" : "#"
+    },
+    {
+      "id" : "03",
+      "color" : "#FF9800",
+      "image" : "#"
+    },
+    {
+      "id" : "04",
+      "color" : "#5D4037",
+      "image" : "#"
+    },
+    {
+      "id" : "05",
+      "color" : "#FFC107",
+      "image" : "#"
+    }
+  ],
+  "availableSizes" : [
+    {
+      "id" : "00",
+      "name" : "xxs"
+    },
+    {
+      "id" : "01",
+      "name" : "xs"
+    },
+    {
+      "id" : "02",
+      "name" : "s"
+    },
+    {
+      "id" : "03",
+      "name" : "m"
+    },
+    {
+      "id" : "04",
+      "name" : "l"
+    },
+    {
+      "id" : "05",
+      "name" : "xl"
+    },
+    {
+      "id" : "06",
+      "name" : "xxl"
+    }
+  ]
+}

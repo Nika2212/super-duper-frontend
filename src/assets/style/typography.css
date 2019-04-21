@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Bender';
+  src: url('../font/Bender.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Bender-Black';
+  src: url('../font/Bender-Black.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Bender-Black-Italic';
+  src: url('../font/Bender-BlackItalic.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Bender-Bold';
+  src: url('../font/Bender-Bold.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Bender-Bold-Italic';
+  src: url('../font/Bender-BoldItalic.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Bender-Italic';
+  src: url('../font/Bender-Italic.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Bender-Light';
+  src: url('../font/Bender-Light.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Bender-Light-Italic';
+  src: url('../font/Bender-LightItalic.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.typo-primary-regular {
+  font-family: 'Bender', sans-serif !important;
+}
+.typo-primary-regular-italic {
+  font-family: 'Bender-Italic', sans-serif !important;
+}
+.typo-primary-black {
+  font-family: 'Bender-Black', sans-serif !important;
+}
+.typo-primary-black-italic {
+  font-family: 'Bender-Black-Italic', sans-serif !important;
+}
+.typo-primary-bold {
+  font-family: 'Bender-Bold', sans-serif !important;
+}
+.typo-primary-bold-italic {
+  font-family: 'Bender-Bold-Italic', sans-serif !important;
+}
+.typo-primary-light {
+  font-family: 'Bender-Light', sans-serif !important;
+}
+.typo-primary-light-italic {
+  font-family: 'Bender-Light-Italic', sans-serif !important;
+}
+
+.typo-xxs {
+  font-size: 9px !important;
+}
+.typo-xs {
+  font-size: 12px !important;
+}
+.typo-sm {
+  font-size: 14px !important;
+}
+.typo-md {
+  font-size: 18px !important;
+}
+.typo-lg {
+  font-size: 24px !important;
+}
+.typo-xl {
+  font-size: 30px !important;
+}
+.typo-xxl {
+  font-size: 36px !important;
+}
+
+.typo-upper {
+  text-transform: uppercase !important;
+}
+.typo-capital {
+  text-transform: capitalize !important;
+}
+
+.typo-align-left {
+  text-align: left !important;
+}
+.typo-align-center {
+  text-align: center !important;
+}
+.typo-align-right {
+   text-align: right !important;
+}
+
+.typo-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

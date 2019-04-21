@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@import "assets/style/_reset.css";
+@import "assets/style/_grid.css";
+@import "assets/style/_utils.css";
+@import "assets/style/typography.css";
+@import "assets/style/palette.css";
+@import "assets/style/ui.css";
