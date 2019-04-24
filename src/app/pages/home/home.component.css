@@ -160,3 +160,25 @@
 .new-products-section .products .products-content .super-item-container:nth-child(4n) {
   border-right: none !important;
 }
+
+.offer-section {
+  margin-top: 30px;
+
+  width: auto;
+  height: auto;
+}
+.offer-section .grid-container {
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+.offer-section .offer-block {
+
+  height: 312px;
+
+  flex: 1;
+}
+.offer-section .offer-block:not(:last-child) {
+  border-right: 2px solid #f6f6f6;
+}
+.offer-section .offer-block .offer-block-skeleton {
+  padding: 30px;
+}

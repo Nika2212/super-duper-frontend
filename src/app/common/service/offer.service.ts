@@ -15,4 +15,7 @@ export class OfferService {
   public getHomeOffer(): Observable<any> {
     return this.http.get(this.API.OFFER.HOME_OFFER);
   }
+  public getGeneralOffer(): Observable<any> {
+    return this.http.get(this.API.OFFER.GENERAL_OFFER);
+  }
 }

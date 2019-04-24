@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import { HeroOfferModel } from './home.model';
+import {HeroOfferModel, OfferModel} from './home.model';
 import { RESOURCE } from '../../resource';
 import { QuickViewService } from '../../common/components/quick-view/quick-view.service';
 import { ProductsItemShortModel } from '../../common/models/product-item-short.model';
@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   public newProductsSectionLeftArrowActivity: boolean = false;
   public newProductsSectionRightArrowActivity: boolean = true;
   public newProductsSectionProductsArray: ProductsItemShortModel[] = [];
+  public offerSectionOfferArray: OfferModel[] = [];
 
   private heroSectionSubscription: Subscription;
   private newProductsSectionSubscription: Subscription;
@@ -27,6 +28,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   public ngOnInit(): void {
     this.newProductsSectionProductsArrayReset();
+    this.offerSectionOfferArrayReset();
     this.newProductsSectionSubscription = this.productService.getNewProductList().subscribe((payload: ProductsItemShortModel[]) => this.newProductsSectionProductsArray = payload);
     this.heroSectionSubscription = this.offerService.getHomeOffer().subscribe((payload: HeroOfferModel) => this.heroSectionHeroModel = payload);
   }
@@ -38,5 +40,11 @@ export class HomeComponent implements OnInit, OnDestroy {
     for (let i = 0; i < 8; i++) {
       this.newProductsSectionProductsArray.push(new ProductsItemShortModel(null, null, null, null, null, null, false, false, null));
     }
+  }
+  public offerSectionOfferArrayReset(): void {
+    for (let i = 0; i < 3; i++) {
+      this.offerSectionOfferArray.push(new OfferModel(null, null, false, null));
+    }
+    this.offerSectionOfferArray[this.offerSectionOfferArray.length - 1].important = true;
   }
 }

@@ -37,8 +37,18 @@
       </div>
     </div>
   </section>
-  <!-- Offer Component -->
-  <section class="bestseller-products-section w-100 p-relative"></section>
+  <section class="offer-section w-100 p-relative">
+    <div class="grid-container content-row-start">
+      <div *ngFor="let offer of offerSectionOfferArray" class="offer-block" [ngStyle]="{'flex' : offer.important ? '2' : '1'}">
+        <div [ngClass]="{'d-none' : offer === null}" class="offer-block-skeleton content-row-center w-100 h-100 bg-white">
+          <p class="typo-primary-black color-black-alt typo-xl typo-upper">offer block</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bestseller-products-section w-100 p-relative">
+    <div class="grid-container"></div>
+  </section>
   <section class="featured-products-section w-100 p-relative"></section>
   <section class="brands-carousel w-100 p-relative"></section>
   <!-- About Component -->

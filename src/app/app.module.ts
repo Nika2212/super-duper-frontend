@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { QuickViewComponent } from './common/components/quick-view/quick-view.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ItemShortComponent } from './common/components/item-short/item-short.component';
+import { ItemCarouselComponent } from './common/components/item-carousel/item-carousel.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ItemShortComponent } from './common/components/item-short/item-short.co
     HeaderComponent,
     HomeComponent,
     QuickViewComponent,
-    ItemShortComponent
+    ItemShortComponent,
+    ItemCarouselComponent
   ],
   imports: [
     BrowserModule,

@@ -7,3 +7,11 @@ export class HeroOfferModel {
     public image: string
   ) {}
 }
+export class OfferModel {
+  constructor(
+    public id: string,
+    public name: string,
+    public important: boolean,
+    public image: string
+  ) {}
+}

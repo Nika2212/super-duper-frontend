@@ -18,7 +18,8 @@ export const RESOURCE = {
     BACKEND : {
       CATEGORY : {},
       OFFER : {
-        HOME_OFFER : '../assets/backend/offer/home-offer.json'
+        HOME_OFFER : '../assets/backend/offer/home-offer.json',
+        GENERAL_OFFER : '../assets/backend/offer/general-offer.json'
       },
       PRODUCT : {
         NEW_PRODUCTS : '../assets/backend/product/new-products.json',
