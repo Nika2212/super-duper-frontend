@@ -38,7 +38,9 @@ export class QuickViewComponent implements OnInit, OnDestroy {
   }
   public initProductItem(): void {
     this.selectedProduct = new ProductItemSelectedModel(this.preSelectedProductItem.id, this.preSelectedProductItem.colorId, this.preSelectedProductItem.sizeId, 1);
-    this.productService.getProductOption(this.preSelectedProductItem.id).subscribe((payload: ProductItemOptionModel) => this.preSelectedProductItemOption = payload);
+    setTimeout(() => {
+      this.productService.getProductOption(this.preSelectedProductItem.id).subscribe((payload: ProductItemOptionModel) => this.preSelectedProductItemOption = payload);
+    }, 500);
   }
   public selectProductColorMethod(colorId: string): void {
     this.selectedProduct.colorId = colorId;

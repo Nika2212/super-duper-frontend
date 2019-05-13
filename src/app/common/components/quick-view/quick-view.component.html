@@ -4,11 +4,11 @@
       <div class="image-view w-50 h-100 content-column-start p-relative" [ngStyle]="{'background-color' : preSelectedProductItemOption ? '#ffffff' : '#cccccc'}">
         <img *ngIf="preSelectedProductItemOption" [src]="preSelectedProductItem.image" alt="">
         <div class="wishlist-btn content-row-center bg-lightgray p-absolute clickable-true selectable-false">
-          <img [src]="ICON.HEART_DEACTIVE" alt="...">
+          <img [ngClass]="{'d-none' : !preSelectedProductItemOption}" [src]="ICON.HEART_DEACTIVE" alt="...">
           <!--<img [src]="ICON.HEART_ACTIVE" alt="...">-->
         </div>
         <div class="compare-btn content-row-center bg-lightgray p-absolute clickable-true selectable-false">
-          <img [src]="ICON.COMPARE" alt="...">
+          <img [ngClass]="{'d-none' : !preSelectedProductItemOption}" [src]="ICON.COMPARE" alt="...">
         </div>
       </div>
       <div class="info-view w-50 h-100 content-column-start content-align-start p-relative">

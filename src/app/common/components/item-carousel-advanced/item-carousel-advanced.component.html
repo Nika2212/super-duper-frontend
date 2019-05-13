@@ -1,0 +1,11 @@
+<div class="container bg-white p-relative">
+  <img [ngClass]="{'d-none' : leftArrowActivity}" class="left-arrow clickable-false selectable-false draggable-false" [src]="ICON.ARROW_LEFT_DISABLED" alt="...">
+  <img [ngClass]="{'d-none' : !leftArrowActivity}" class="left-arrow clickable-true selectable-false draggable-false" [src]="ICON.ARROW_LEFT_ACTIVE" alt="...">
+  <img [ngClass]="{'d-none' : rightArrowActivity}" class="right-arrow clickable-false selectable-false draggable-false" [src]="ICON.ARROW_RIGHT_DISABLED" alt="...">
+  <img [ngClass]="{'d-none' : !rightArrowActivity}" class="right-arrow clickable-true selectable-false draggable-false" [src]="ICON.ARROW_RIGHT_ACTIVE" alt="...">
+  <div #railReference class="rail p-absolute h-100 content-row-start">
+    <div *ngFor="let item of array" class="rail-item h-100 content-row-center">
+      <p [ngClass]="{'d-none' : item.image}" class="typo-primary-black typo-xl color-black-alt typo-upper">{{ item.name }}</p>
+    </div>
+  </div>
+</div>

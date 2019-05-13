@@ -23,7 +23,12 @@ export const RESOURCE = {
       },
       PRODUCT : {
         NEW_PRODUCTS : '../assets/backend/product/new-products.json',
-        PRODUCT_OPTION : '../assets/backend/product/product-option.json',
+        BESTSELLER_PRODUCTS : '../assets/backend/product/bestseller-products.json',
+        FEATURED_PRODUCTS : '../assets/backend/product/featured-products.json',
+        PRODUCT_OPTION : '../assets/backend/product/product-option.json'
+      },
+      BRAND : {
+        TOP_BRANDS : '../assets/backend/brand/top-brands.json'
       }
     }
   }

@@ -9,6 +9,7 @@ import { QuickViewComponent } from './common/components/quick-view/quick-view.co
 import { HttpClientModule } from '@angular/common/http';
 import { ItemShortComponent } from './common/components/item-short/item-short.component';
 import { ItemCarouselComponent } from './common/components/item-carousel/item-carousel.component';
+import { ItemCarouselAdvancedComponent } from './common/components/item-carousel-advanced/item-carousel-advanced.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ItemCarouselComponent } from './common/components/item-carousel/item-ca
     HomeComponent,
     QuickViewComponent,
     ItemShortComponent,
-    ItemCarouselComponent
+    ItemCarouselComponent,
+    ItemCarouselAdvancedComponent
   ],
   imports: [
     BrowserModule,

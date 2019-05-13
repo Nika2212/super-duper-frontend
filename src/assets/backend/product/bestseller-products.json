@@ -1,0 +1,46 @@
+[
+  {
+    "id" : "1373",
+    "name" : "2L swash snowboard jacket",
+    "price" : 150.29,
+    "oldPrice" : null,
+    "colorId" : "01",
+    "sizeId" : "03",
+    "newBadge" : false,
+    "hotBadge" : false,
+    "image" : "./assets/image/local-storage/2l-swash-snowboard-jacket.jpg"
+  },
+  {
+    "id" : "1374",
+    "name" : "encore snowboard jacket",
+    "price" : 770.15,
+    "oldPrice" : null,
+    "colorId" : "02",
+    "sizeId" : "01",
+    "newBadge" : false,
+    "hotBadge" : true,
+    "image" : "./assets/image/local-storage/encore-snowboard-jacket-2.jpg"
+  },
+  {
+    "id" : "1375",
+    "name" : "giant anthem mountain fiberglass",
+    "price" : 1999.99,
+    "oldPrice" : 2499.99,
+    "colorId" : "00",
+    "sizeId" : "05",
+    "newBadge" : true,
+    "hotBadge" : true,
+    "image" : "./assets/image/local-storage/giant-anthem-mountain-fiberglass.jpg"
+  },
+  {
+    "id" : "1376",
+    "name" : "leatt adventure body protector",
+    "price" : 179.99,
+    "oldPrice" : null,
+    "colorId" : "01",
+    "sizeId" : "01",
+    "newBadge" : true,
+    "hotBadge" : false,
+    "image" : "./assets/image/local-storage/leatt-adventure-body-protector.jpg"
+  }
+]

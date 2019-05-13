@@ -1,45 +1,32 @@
 <div class="home-page">
   <section class="hero-section w-100 p-relative">
-    <p *ngIf="heroSectionHeroModel" class="hero-name"> {{ heroSectionHeroModel.heading }} </p>
+    <p *ngIf="heroOfferSectionElement" class="hero-name"> {{ heroOfferSectionElement.heading }} </p>
     <div class="grid-container p-relative">
       <div class="hero-offer w-100 content-row-start content-align-start">
         <div class="info w-50 content-column-start content-align-start">
-          <p [ngClass]="{'offer-heading-skeleton' : !heroSectionHeroModel}" class="offer-heading typo-primary-black-italic color-black typo-upper">{{ heroSectionHeroModel ? heroSectionHeroModel.heading : ''}}</p>
-          <p [ngClass]="{'offer-sub-heading-skeleton' : !heroSectionHeroModel}" class="offer-sub-heading typo-primary-light-italic color-black typo-upper">{{ heroSectionHeroModel ? heroSectionHeroModel.subHeading : '' }}</p>
-          <p [ngClass]="{'d-none' : !heroSectionHeroModel}" class="offer-description typo-primary-regular typo-sm color-black">{{ heroSectionHeroModel ? heroSectionHeroModel.description : '' }}</p>
-          <div [ngClass]="{'d-none' : heroSectionHeroModel}" class="offer-description-skeleton content-column-start content-align-start">
+          <p [ngClass]="{'offer-heading-skeleton' : !heroOfferSectionElement}" class="offer-heading typo-primary-black-italic color-black typo-upper">{{ heroOfferSectionElement ? heroOfferSectionElement.heading : ''}}</p>
+          <p [ngClass]="{'offer-sub-heading-skeleton' : !heroOfferSectionElement}" class="offer-sub-heading typo-primary-light-italic color-black typo-upper">{{ heroOfferSectionElement ? heroOfferSectionElement.subHeading : '' }}</p>
+          <p [ngClass]="{'d-none' : !heroOfferSectionElement}" class="offer-description typo-primary-regular typo-sm color-black">{{ heroOfferSectionElement ? heroOfferSectionElement.description : '' }}</p>
+          <div [ngClass]="{'d-none' : heroOfferSectionElement}" class="offer-description-skeleton content-column-start content-align-start">
             <span></span>
             <span></span>
             <span></span>
           </div>
         </div>
         <div class="offer-image content-row-center w-50">
-          <img *ngIf="heroSectionHeroModel" class="offer-img" [src]="heroSectionHeroModel.image" alt="...">
+          <img *ngIf="heroOfferSectionElement" class="offer-img" [src]="heroOfferSectionElement.image" alt="...">
         </div>
       </div>
     </div>
   </section>
   <section class="new-products-section w-100 p-relative">
     <div class="grid-container">
-      <div class="products w-100 content-column-start bg-white">
-        <div class="products-head w-100 content-row-start">
-          <p class="typo-primary-black-italic typo-lg color-black-alt typo-capital">new products</p>
-          <div class="controls self-end">
-            <img [ngClass]="{'d-none' : newProductsSectionLeftArrowActivity}" class="clickable-false selectable-false draggable-false" [src]="ICON.ARROW_LEFT_DISABLED" alt="...">
-            <img [ngClass]="{'d-none' : !newProductsSectionLeftArrowActivity}" class="clickable-true selectable-false draggable-false" [src]="ICON.ARROW_LEFT_ACTIVE" alt="...">
-            <img [ngClass]="{'d-none' : newProductsSectionRightArrowActivity}" class="clickable-false selectable-false draggable-false" [src]="ICON.ARROW_RIGHT_DISABLED" alt="...">
-            <img [ngClass]="{'d-none' : !newProductsSectionRightArrowActivity}" class="clickable-true selectable-false draggable-false" [src]="ICON.ARROW_RIGHT_ACTIVE" alt="...">
-          </div>
-        </div>
-        <div class="products-content content-row-start w-100">
-          <div class="super-item-container" *ngFor="let item of newProductsSectionProductsArray"><super-item [item]="item"></super-item></div>
-        </div>
-      </div>
+      <super-item-carousel [productsArray]="newProductsSectionArray" [carouselTitle]="'new products'"></super-item-carousel>
     </div>
   </section>
   <section class="offer-section w-100 p-relative">
     <div class="grid-container content-row-start">
-      <div *ngFor="let offer of offerSectionOfferArray" class="offer-block" [ngStyle]="{'flex' : offer.important ? '2' : '1'}">
+      <div *ngFor="let offer of offerSectionArray" class="offer-block clickable-true" [ngStyle]="{'flex' : offer.important ? '2' : '1'}">
         <div [ngClass]="{'d-none' : offer === null}" class="offer-block-skeleton content-row-center w-100 h-100 bg-white">
           <p class="typo-primary-black color-black-alt typo-xl typo-upper">offer block</p>
         </div>
@@ -47,10 +34,20 @@
     </div>
   </section>
   <section class="bestseller-products-section w-100 p-relative">
-    <div class="grid-container"></div>
+    <div class="grid-container">
+      <super-item-carousel [productsArray]="bestsellerProductsSectionArray" [carouselTitle]="'bestseller products'"></super-item-carousel>
+    </div>
   </section>
-  <section class="featured-products-section w-100 p-relative"></section>
-  <section class="brands-carousel w-100 p-relative"></section>
+  <section class="featured-products-section w-100 p-relative">
+    <div class="grid-container">
+      <super-item-carousel [productsArray]="featuredProductsSectionArray" [carouselTitle]="'featured products'"></super-item-carousel>
+    </div>
+  </section>
+  <section class="brands-carousel-section w-100 p-relative">
+    <div class="grid-container">
+      <super-item-carousel-advanced [array]="brandSectionArray" [itemsToShow]="4"></super-item-carousel-advanced>
+    </div>
+  </section>
   <!-- About Component -->
   <!-- Footer Component -->
 </div>

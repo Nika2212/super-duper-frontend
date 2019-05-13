@@ -151,6 +151,8 @@
   border-right: 2px solid #fff;
 }
 .info-view .option-skeleton {
+  margin-top: 9px;
+
   min-width: 100%;
   min-height: 50px;
 

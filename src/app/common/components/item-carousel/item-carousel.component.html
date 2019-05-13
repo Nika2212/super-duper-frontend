@@ -1,3 +1,16 @@
-<p>
-  item-carousel works!
-</p>
+<div class="content w-100 h-100">
+  <div class="products w-100 content-column-start bg-white">
+    <div class="products-head w-100 content-row-start">
+      <p [ngClass]="{'title-skeleton' : !carouselTitle}" class="typo-primary-black-italic typo-lg color-black-alt typo-capital">{{ carouselTitle ? carouselTitle : '' }}</p>
+      <div class="controls self-end">
+        <img [ngClass]="{'d-none' : leftArrowActivity}" class="clickable-false selectable-false draggable-false" [src]="ICON.ARROW_LEFT_DISABLED" alt="...">
+        <img [ngClass]="{'d-none' : !leftArrowActivity}" class="clickable-true selectable-false draggable-false" [src]="ICON.ARROW_LEFT_ACTIVE" alt="...">
+        <img [ngClass]="{'d-none' : rightArrowActivity}" class="clickable-false selectable-false draggable-false" [src]="ICON.ARROW_RIGHT_DISABLED" alt="...">
+        <img [ngClass]="{'d-none' : !rightArrowActivity}" class="clickable-true selectable-false draggable-false" [src]="ICON.ARROW_RIGHT_ACTIVE" alt="...">
+      </div>
+    </div>
+    <div class="products-content content-row-start w-100">
+      <div class="super-item-container" *ngFor="let item of productsArray"><super-item [item]="item"></super-item></div>
+    </div>
+  </div>
+</div>

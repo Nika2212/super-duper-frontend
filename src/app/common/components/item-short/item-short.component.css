@@ -76,6 +76,8 @@
   width: 45px;
   height: 45px;
 
+  filter: brightness(99%);
+
   background-position: top left;
   background-repeat: no-repeat;
   background-size: auto;
@@ -88,8 +90,8 @@
 .products-item .badge:after {
   position: absolute;
 
-  left: 2px;
-  top: 12px;
+  left: 3px;
+  top: 11px;
 
   font-family: 'Bender-Bold-Italic', sans-serif;
   font-size: 11px;

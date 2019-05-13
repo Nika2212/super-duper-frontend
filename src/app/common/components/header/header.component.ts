@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit {
     new HeaderCategoryModel('02', 'women'),
     new HeaderCategoryModel('03', 'accessories'),
     new HeaderCategoryModel('04', 'sale'),
-    new HeaderCategoryModel('05', 'brands'),
+    new HeaderCategoryModel('05', 'brand'),
     new HeaderCategoryModel('06', 'articles'),
     new HeaderCategoryModel('07', 'elements')
   ];
