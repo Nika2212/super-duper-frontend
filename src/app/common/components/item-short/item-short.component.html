@@ -14,8 +14,8 @@
       <span></span>
     </div>
     <div [ngClass]="{'d-none' : !item.price}" class="price content-column-start content-align-end self-end">
-      <div class="fresh typo-primary-bold-italic typo-md color-aqua">{{ item.price }}</div>
-      <div [ngClass]="{'d-none' : !item.oldPrice}" class="old typo-primary-bold-italic typo-sm color-darkgray">1256.75</div>
+      <div class="fresh typo-primary-bold-italic typo-md color-aqua">${{ item.price }}</div>
+      <div [ngClass]="{'d-none' : !item.oldPrice}" class="old typo-primary-bold-italic typo-sm color-darkgray">${{item.oldPrice}}</div>
     </div>
     <div [ngClass]="{'d-none' : item.price}" class="price-skeleton self-end"></div>
   </div>

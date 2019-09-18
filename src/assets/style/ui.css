@@ -1,3 +1,6 @@
+.application {
+  padding-bottom: 60px;
+}
 .window-popup-mode {
   margin-right: 17px;
   filter: blur(3px);

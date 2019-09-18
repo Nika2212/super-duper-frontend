@@ -2,6 +2,7 @@
   <div [ngClass]="{'window-popup-mode' : preSelectedProductItem}" class="content p-relative">
     <super-header></super-header>
     <super-home></super-home>
+    <super-footer></super-footer>
   </div>
   <super-quick-view *ngIf="preSelectedProductItem !== null" [preSelectedProductItem]="preSelectedProductItem"></super-quick-view>
 </div>

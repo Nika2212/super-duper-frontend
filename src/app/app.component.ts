@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { QuickViewService } from './common/components/quick-view/quick-view.service';
-import {ProductsItemShortModel} from './common/models/product-item-short.model';
+import { ProductsItemShortModel } from './common/models/product-item-short.model';
+import { DOCUMENT } from "@angular/common";
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import {ProductsItemShortModel} from './common/models/product-item-short.model';
 export class AppComponent implements OnInit {
   public preSelectedProductItem: ProductsItemShortModel = null;
 
-  constructor(private quickViewService: QuickViewService) {}
+  constructor(@Inject(DOCUMENT) private document: Document, private quickViewService: QuickViewService) {}
 
   public ngOnInit(): void {
     this.quickViewService.getQuickViewProduct().subscribe((product: ProductsItemShortModel) => {

@@ -46,6 +46,12 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../font/Roboto-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
 
 .typo-primary-regular {
   font-family: 'Bender', sans-serif !important;
@@ -70,6 +76,9 @@
 }
 .typo-primary-light-italic {
   font-family: 'Bender-Light-Italic', sans-serif !important;
+}
+.typo-secondary-regular {
+  font-family: 'Roboto Regular', sans-serif;
 }
 
 .typo-xxs {

@@ -10,11 +10,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { ItemShortComponent } from './common/components/item-short/item-short.component';
 import { ItemCarouselComponent } from './common/components/item-carousel/item-carousel.component';
 import { ItemCarouselAdvancedComponent } from './common/components/item-carousel-advanced/item-carousel-advanced.component';
+import { FooterComponent } from "./common/components/footer/footer.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    FooterComponent,
     HomeComponent,
     QuickViewComponent,
     ItemShortComponent,

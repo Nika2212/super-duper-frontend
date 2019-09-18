@@ -7,6 +7,7 @@ export const RESOURCE = {
         ARROW_RIGHT_DISABLED : '../assets/image/icon/arrow-right-disabled.png',
         ARROW_RIGHT_ACTIVE : '../assets/image/icon/arrow-right-active.png',
         ARROW_LEFT_ACTIVE : '../assets/image/icon/arrow-left-active.png',
+        ARROW_RIGHT_PLAY : '../assets/image/icon/arrow-right-play.png',
         REMOVE : '../assets/image/icon/remove.png',
         SEARCH : '../assets/image/icon/search.png',
         MENU : '../assets/image/icon/menu.png',
