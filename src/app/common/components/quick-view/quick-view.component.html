@@ -2,7 +2,7 @@
   <div (click)="$event.stopPropagation()" class="quick-view-window p-absolute bg-white content-column-start">
     <div class="product-info w-100 content-row-start">
       <div class="image-view w-50 h-100 content-column-start p-relative" [ngStyle]="{'background-color' : preSelectedProductItemOption ? '#ffffff' : '#cccccc'}">
-        <img *ngIf="preSelectedProductItemOption" [src]="preSelectedProductItem.image" alt="">
+        <img *ngIf="preSelectedProductItemOption" [src]="preSelectedProductItem.thumbnail" alt="">
         <div class="wishlist-btn content-row-center bg-lightgray p-absolute clickable-true selectable-false">
           <img [ngClass]="{'d-none' : !preSelectedProductItemOption}" [src]="ICON.HEART_DEACTIVE" alt="...">
           <!--<img [src]="ICON.HEART_ACTIVE" alt="...">-->
@@ -30,14 +30,14 @@
           <p class="typo-primary-regular typo-sm color-darkgray-alt typo-capital">color</p>
           <div [ngClass]="{'d-none' : preSelectedProductItemOption}" class="option-skeleton"></div>
           <div *ngIf="preSelectedProductItemOption" class="select-box w-100 content-row-start">
-            <div *ngFor="let color of preSelectedProductItemOption.availableColors" (click)="selectProductColorMethod(color.id)" class="color h-100 clickable-true" [ngStyle]="{'background-color' : color.color}" [ngClass]="{'selected-option' : color.id === selectedProduct.colorId}"></div>
+            <div *ngFor="let color of preSelectedProductItem.color" (click)="selectProductColorMethod(color.colorHEX)" class="color h-100 clickable-true" [ngStyle]="{'background-color' : color.colorHEX}" [ngClass]="{'selected-option' : color.colorHEX === selectedProduct.colorHEX}"></div>
           </div>
         </div>
         <div class="size-option w-100 content-column-start content-align-start">
           <p class="typo-primary-regular typo-sm color-darkgray-alt typo-capital">size</p>
           <div [ngClass]="{'d-none' : preSelectedProductItemOption}" class="option-skeleton"></div>
           <div *ngIf="preSelectedProductItemOption" class="select-box w-100 content-row-start">
-            <p *ngFor="let size of preSelectedProductItemOption.availableSizes" (click)="selectProductSizeMethod(size.id)" class="size h-100 clickable-true content-row-center bg-lightgray typo-primary-regular typo-sm color-darkgray typo-upper" [ngClass]="{'selected-option' : size.id === selectedProduct.sizeId}">{{ size.name }}</p>
+            <p *ngFor="let size of preSelectedProductItem.size" (click)="selectProductSizeMethod(size)" class="size h-100 clickable-true content-row-center bg-lightgray typo-primary-regular typo-sm color-darkgray typo-upper" [ngClass]="{'selected-option' : size === selectedProduct.size}">{{ size }}</p>
           </div>
         </div>
         <div class="quantity-option w-100 content-column-start content-align-start">

@@ -7,7 +7,7 @@ export class ProductItemFullModel {
     public desc: string,
     public brand: string,
     public price: number,
-    public oldPrice: string,
+    public oldPrice: number,
     public badge: string,
     public sku: string,
     public thumbnail: string,
