@@ -1,6 +1,14 @@
 .application {
   padding-bottom: 60px;
 }
+.content {
+  transition: transform 180ms ease-in-out;
+}
+.content.cart-preview-active {
+  margin-right: 17px;
+
+  transform: translateX(-343px);
+}
 .window-popup-mode {
   margin-right: 17px;
   filter: blur(3px);

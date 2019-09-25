@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { ProductsItemShortModel } from '../../models/product-item-short.model';
 import { QuickViewService } from '../quick-view/quick-view.service';
 
@@ -7,14 +7,13 @@ import { QuickViewService } from '../quick-view/quick-view.service';
   templateUrl: './item-short.component.html',
   styleUrls: ['./item-short.component.css']
 })
-export class ItemShortComponent implements OnInit {
+export class ItemShortComponent {
   @Input() public item: ProductsItemShortModel = null;
+  @Output() public itemQuickViewSelect: EventEmitter<ProductsItemShortModel> = new EventEmitter<ProductsItemShortModel>();
 
-  constructor(private quickViewService: QuickViewService) { }
+  constructor() { }
 
-  ngOnInit() {
-  }
-  public quickViewSelectMethod(): void {
-    this.quickViewService.setQuickViewProduct(this.item);
+  public itemQuickSelectMethod(): void {
+    this.itemQuickViewSelect.emit(this.item);
   }
 }

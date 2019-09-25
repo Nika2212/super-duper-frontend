@@ -21,7 +21,7 @@
   </section>
   <section class="new-products-section w-100 p-relative">
     <div class="grid-container">
-      <super-item-carousel [productsArray]="newProductsSectionArray" [carouselTitle]="'new products'"></super-item-carousel>
+      <super-item-carousel (itemQuickViewSelect)="quickViewSelect($event)" [productsArray]="newProductsSectionArray" [carouselTitle]="'new products'" [show]="8"></super-item-carousel>
     </div>
   </section>
   <section class="offer-section w-100 p-relative">
@@ -35,12 +35,12 @@
   </section>
   <section class="bestseller-products-section w-100 p-relative">
     <div class="grid-container">
-      <super-item-carousel [productsArray]="bestsellerProductsSectionArray" [carouselTitle]="'bestseller products'"></super-item-carousel>
+      <super-item-carousel (itemQuickViewSelect)="quickViewSelect($event)" [productsArray]="bestsellerProductsSectionArray" [carouselTitle]="'bestseller products'" [show]="4"></super-item-carousel>
     </div>
   </section>
   <section class="featured-products-section w-100 p-relative">
     <div class="grid-container">
-      <super-item-carousel [productsArray]="featuredProductsSectionArray" [carouselTitle]="'featured products'"></super-item-carousel>
+      <super-item-carousel (itemQuickViewSelect)="quickViewSelect($event)" [productsArray]="featuredProductsSectionArray" [carouselTitle]="'featured products'" [show]="4"></super-item-carousel>
     </div>
   </section>
   <section class="brands-carousel-section w-100 p-relative">
@@ -65,6 +65,4 @@
       </div>
     </div>
   </section>
-  <!-- About Component -->
-  <!-- Footer Component -->
 </div>

@@ -6,7 +6,7 @@
 }
 .footer .footer-wrapper {
   width: 100%;
-  height: 310px;
+  height: 250px;
 
   background-color: #222429;
 
@@ -19,7 +19,7 @@
 .footer .footer-wrapper ul {
   padding: 30px;
 
-  flex: 1;
+  width: 25%;
   height: 100%;
 }
 .footer .footer-wrapper ul li:first-child {
@@ -34,10 +34,16 @@
   align-items: center;
 }
 .footer .footer-wrapper ul li:not(:first-child) a {
+  max-width: 100%;
+
   color: #999999;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .footer .footer-wrapper ul li:not(:first-child) a:hover {
-  color: #3fccfd;
+  color: #17c7be;
 }
 .footer .footer-wrapper ul:last-child li {
   height: auto;
@@ -51,11 +57,14 @@
   display: flex;
   justify-content: flex-start;
 }
+.footer .footer-wrapper ul:last-child li .subscribe-block label {
+  flex: 1;
+}
 .footer .footer-wrapper ul:last-child li .subscribe-block input {
   padding-left: 15px;
   padding-right: 15px;
 
-  flex: 1;
+  width: 100%;
   height: 100%;
 
   background-color: #050506;
@@ -78,4 +87,26 @@
 
   border: none;
   outline: none;
+}
+.footer .footer-wrapper ul:last-child li .social-block {
+  margin-top: 15px;
+
+  width: 100%;
+  height: 26px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-wrapper ul:last-child li .social-block .social-link {
+  width: 26px;
+  height: 26px;
+
+  background-color: #0e0e10;
+}
+.footer .copyright-wrapper {
+  width: 100%;
+  height: 60px;
+
+  background-color: #000009;
 }

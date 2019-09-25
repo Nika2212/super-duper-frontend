@@ -1,5 +1,5 @@
-<div class="overlay" (click)="closeQuickViewWindow($event)">
-  <div class="quick-view-window p-absolute bg-white content-column-start">
+<div class="overlay" (click)="closeQuickViewWindow()">
+  <div (click)="$event.stopPropagation()" class="quick-view-window p-absolute bg-white content-column-start">
     <div class="product-info w-100 content-row-start">
       <div class="image-view w-50 h-100 content-column-start p-relative" [ngStyle]="{'background-color' : preSelectedProductItemOption ? '#ffffff' : '#cccccc'}">
         <img *ngIf="preSelectedProductItemOption" [src]="preSelectedProductItem.image" alt="">
@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="info-view w-50 h-100 content-column-start content-align-start p-relative">
-        <div class="close-btn p-absolute bg-lightgray content-row-center object-ico clickable-true selectable-false" (click)="closeQuickViewWindow(null)">
+        <div class="close-btn p-absolute bg-lightgray content-row-center object-ico clickable-true selectable-false" (click)="closeQuickViewWindow()">
           <img [src]="ICON.REMOVE" alt="...">
         </div>
         <p [ngClass]="{'d-none' : !preSelectedProductItemOption}" class="item-name typo-primary-black-italic typo-xl color-black typo-upper">{{ preSelectedProductItemOption ? preSelectedProductItem.name : null }}</p>

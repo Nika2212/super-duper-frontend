@@ -4,13 +4,15 @@
       <p [ngClass]="{'title-skeleton' : !carouselTitle}" class="typo-primary-black-italic typo-lg color-black-alt typo-capital">{{ carouselTitle ? carouselTitle : '' }}</p>
       <div class="controls self-end">
         <img [ngClass]="{'d-none' : leftArrowActivity}" class="clickable-false selectable-false draggable-false" [src]="ICON.ARROW_LEFT_DISABLED" alt="...">
-        <img [ngClass]="{'d-none' : !leftArrowActivity}" class="clickable-true selectable-false draggable-false" [src]="ICON.ARROW_LEFT_ACTIVE" alt="...">
+        <img [ngClass]="{'d-none' : !leftArrowActivity}" class="clickable-true selectable-false draggable-false" [src]="ICON.ARROW_LEFT_ACTIVE" (click)="onPreviousPage()" alt="...">
         <img [ngClass]="{'d-none' : rightArrowActivity}" class="clickable-false selectable-false draggable-false" [src]="ICON.ARROW_RIGHT_DISABLED" alt="...">
-        <img [ngClass]="{'d-none' : !rightArrowActivity}" class="clickable-true selectable-false draggable-false" [src]="ICON.ARROW_RIGHT_ACTIVE" alt="...">
+        <img [ngClass]="{'d-none' : !rightArrowActivity}" class="clickable-true selectable-false draggable-false" [src]="ICON.ARROW_RIGHT_ACTIVE" (click)="onNextPage()" alt="...">
       </div>
     </div>
     <div class="products-content content-row-start w-100">
-      <div class="super-item-container" *ngFor="let item of productsArray"><super-item [item]="item"></super-item></div>
+      <div class="super-item-container" *ngFor="let item of productPackPages[productPackCurrentPage]">
+        <super-item [item]="item" (itemQuickViewSelect)="itemQuickViewSelect.emit($event)"></super-item>
+      </div>
     </div>
   </div>
 </div>

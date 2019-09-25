@@ -1,0 +1,73 @@
+.overlay-advanced {
+  position: fixed;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0);
+
+  animation-name: overlay-advanced-appear;
+  animation-direction: alternate;
+  animation-duration: 180ms;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+.overlay-advanced .aside-menu {
+  width: 360px;
+  height: 100vh;
+
+  transform: translateX(360px);
+
+  background-color: #222429;
+
+  animation-name: aside-menu-appear;
+  animation-direction: alternate;
+  animation-duration: 180ms;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes overlay-advanced-appear {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+}
+@keyframes overlay-advanced-disappear {
+  from {
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes aside-menu-appear {
+  from {
+    transform: translateX(360px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes aside-menu-disappear {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(360px);
+  }
+}

@@ -201,8 +201,10 @@
 .info-view .selected-option {
   position: relative;
 
-  outline: 4px solid rgba(0,0,0,1) !important;
-  border-right: none !important;
+  outline: 4px solid rgba(0, 0, 0, 1) !important;
+  border-right-color: transparent !important;
+
+  color: #17c7be;
 
   z-index: 1;
 }

@@ -11,6 +11,7 @@ import { ItemShortComponent } from './common/components/item-short/item-short.co
 import { ItemCarouselComponent } from './common/components/item-carousel/item-carousel.component';
 import { ItemCarouselAdvancedComponent } from './common/components/item-carousel-advanced/item-carousel-advanced.component';
 import { FooterComponent } from "./common/components/footer/footer.component";
+import { CartPreviewComponent } from "./common/components/cart-preview/cart-preview.component";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from "./common/components/footer/footer.component";
     QuickViewComponent,
     ItemShortComponent,
     ItemCarouselComponent,
-    ItemCarouselAdvancedComponent
+    ItemCarouselAdvancedComponent,
+    CartPreviewComponent
   ],
   imports: [
     BrowserModule,

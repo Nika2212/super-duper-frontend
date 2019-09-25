@@ -1,6 +1,7 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import { RESOURCE } from '../../../resource';
 import {HeaderCategoryModel, HeaderCurrencyModel, HeaderLanguageModel} from './header.model';
+import {CartPreviewService} from "../cart-preview/cart-preview.service";
 
 @Component({
   selector: 'super-header',
@@ -38,7 +39,7 @@ export class HeaderComponent implements OnInit {
   public categoryDropdownState: boolean = false;
   public searchInputValue: string = null;
 
-  constructor() {}
+  constructor(private cartPreviewService: CartPreviewService) {}
 
   public ngOnInit(): void {
     this.selectedCurrency = this.currencyArray[0];
@@ -55,6 +56,9 @@ export class HeaderComponent implements OnInit {
   }
   public toggleCategoryDropdown(): void {
     this.categoryDropdownState = !this.categoryDropdownState;
+  }
+  public toggleCartButton(): void {
+    this.cartPreviewService.setCartVisibilityState(true);
   }
   public selectCurrencyMethod(currency: HeaderCurrencyModel): void {
     this.selectedCurrency = currency;

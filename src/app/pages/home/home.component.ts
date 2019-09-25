@@ -7,6 +7,7 @@ import { Subscription } from 'rxjs';
 import { ProductService } from '../../common/service/product.service';
 import { BrandService } from '../../common/service/brand.service';
 import { ItemCarouselAdvancedModel } from '../../common/components/item-carousel-advanced/item-carousel-advanced.model';
+import {QuickViewService} from "../../common/components/quick-view/quick-view.service";
 
 @Component({
   selector: 'super-home',
@@ -34,7 +35,10 @@ export class HomeComponent implements OnInit, OnDestroy {
   private heroSectionSubscription: Subscription;
   private brandSectionSubscription: Subscription;
 
-  constructor(private offerService: OfferService, private productService: ProductService, private brandService: BrandService) {}
+  constructor(private offerService: OfferService,
+              private productService: ProductService,
+              private brandService: BrandService,
+              private quickViewService: QuickViewService) {}
 
   public ngOnInit(): void {
     this.newProductsSectionProductsArrayReset();
@@ -54,7 +58,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
   public newProductsSectionProductsArrayReset(): void {
     for (let i = 0; i < 8; i++) {
-      this.newProductsSectionArray.push(new ProductsItemShortModel(null, null, null, null, null, null, false, false, null));
+      this.newProductsSectionArray.push(new ProductsItemShortModel(null, null, null, null, null, null, null, null, false, false, null));
     }
   }
   public offerSectionOfferArrayReset(): void {
@@ -65,17 +69,20 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
   public bestsellerSectionArrayReset(): void {
     for (let i = 0; i < 4; i++) {
-      this.bestsellerProductsSectionArray.push(new ProductsItemShortModel(null, null, null, null, null, null, false, false, null));
+      this.bestsellerProductsSectionArray.push(new ProductsItemShortModel(null, null, null, null, null, null, null, null, false, false, null));
     }
   }
   public featuredSectionArrayReset(): void {
     for (let i = 0; i < 4; i++) {
-      this.featuredProductsSectionArray.push(new ProductsItemShortModel(null, null, null, null, null, null, false, false, null));
+      this.featuredProductsSectionArray.push(new ProductsItemShortModel(null, null, null, null, null, null, null, null, false, false, null));
     }
   }
   public brandSectionArrayReset(): void {
     for (let i = 0; i < 8; i++) {
       this.brandSectionArray.push(new ItemCarouselAdvancedModel(null, null, null));
     }
+  }
+  public quickViewSelect(item: ProductsItemShortModel): void {
+    this.quickViewService.setQuickViewProduct(item);
   }
 }

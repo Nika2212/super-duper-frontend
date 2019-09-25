@@ -31,3 +31,6 @@
 
   flex-shrink: 0;
 }
+.rail-item p:hover {
+  color: #ff0000;
+}

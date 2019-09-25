@@ -5,7 +5,7 @@
   <img [ngClass]="{'d-none' : !rightArrowActivity}" class="right-arrow clickable-true selectable-false draggable-false" [src]="ICON.ARROW_RIGHT_ACTIVE" alt="...">
   <div #railReference class="rail p-absolute h-100 content-row-start">
     <div *ngFor="let item of array" class="rail-item h-100 content-row-center">
-      <p [ngClass]="{'d-none' : item.image}" class="typo-primary-black typo-xl color-black-alt typo-upper">{{ item.name }}</p>
+      <p [ngClass]="{'d-none' : item.image}" class="typo-primary-black typo-xl color-black-alt typo-upper clickable-true">{{ item.name }}</p>
     </div>
   </div>
 </div>

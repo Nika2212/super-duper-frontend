@@ -1,90 +1,43 @@
 [
   {
-    "id" : "1369",
-    "name" : "breach snowboard jacket",
-    "price" : 991.35,
-    "oldPrice" : null,
-    "colorId" : "05",
-    "sizeId" : "01",
-    "newBadge" : false,
-    "hotBadge" : false,
-    "image" : "./assets/image/local-storage/breach-snowboard-jacket.jpg"
-  },
-  {
-    "id" : "1370",
-    "name" : "moto-9 carbon",
-    "price" : 549.95,
-    "oldPrice" : null,
-    "colorId" : "03",
-    "sizeId" : "01",
-    "newBadge" : false,
-    "hotBadge" : false,
-    "image" : "./assets/image/local-storage/moto-9-carbon.jpg"
-  },
-  {
-    "id" : "1371",
-    "name" : "encore snowboard jacket",
-    "price" : 770.15,
-    "oldPrice" : 1270.15,
-    "colorId" : "02",
-    "sizeId" : "01",
-    "newBadge" : false,
-    "hotBadge" : false,
-    "image" : "./assets/image/local-storage/encore-snowboard-jacket.jpg"
-  },
-  {
-    "id" : "1372",
-    "name" : "white collection tracker snowboard jacket",
-    "price" : 1550.35,
-    "oldPrice" : null,
-    "colorId" : "00",
-    "sizeId" : "00",
-    "newBadge" : false,
-    "hotBadge" : false,
-    "image" : "./assets/image/local-storage/white-collection-snowboard-jacket.jpg"
-  },
-  {
-    "id" : "1373",
-    "name" : "2L swash snowboard jacket",
-    "price" : 150.29,
-    "oldPrice" : null,
-    "colorId" : "01",
-    "sizeId" : "03",
-    "newBadge" : false,
-    "hotBadge" : false,
-    "image" : "./assets/image/local-storage/2l-swash-snowboard-jacket.jpg"
-  },
-  {
-    "id" : "1374",
-    "name" : "encore snowboard jacket",
-    "price" : 770.15,
-    "oldPrice" : null,
-    "colorId" : "02",
-    "sizeId" : "01",
-    "newBadge" : false,
-    "hotBadge" : true,
-    "image" : "./assets/image/local-storage/encore-snowboard-jacket-2.jpg"
-  },
-  {
-    "id" : "1375",
-    "name" : "giant anthem mountain fiberglass",
-    "price" : 1999.99,
-    "oldPrice" : 2499.99,
-    "colorId" : "00",
-    "sizeId" : "05",
-    "newBadge" : true,
-    "hotBadge" : true,
-    "image" : "./assets/image/local-storage/giant-anthem-mountain-fiberglass.jpg"
-  },
-  {
-    "id" : "1376",
-    "name" : "leatt adventure body protector",
-    "price" : 179.99,
-    "oldPrice" : null,
-    "colorId" : "01",
-    "sizeId" : "01",
-    "newBadge" : true,
-    "hotBadge" : false,
-    "image" : "./assets/image/local-storage/leatt-adventure-body-protector.jpg"
+    "id" : "0001",
+    "category" : "shoes",
+    "gender" : "men",
+    "name" : "nike metcon 5 men",
+    "desc" : "The Nike Metcon 5 for men is made for the athlete that wants to become stronger. The training shoe provides speed, stability and durability during every high-impact training and due to the flat, low and wide heel, the Nike Metcon 5 is extra stable.\n\nThe hyperlift-insert assures you of a better stability during every squat, lunge or during the heavier lifting. The Nike Metcon 5 for women is strengthened with rubber, so the shoe counteracts wear and goes along much longer.\n\nFeatures and benefits\n- Suited for every high-impact training\n- Maximum grip during every exercise thanks to the rubber outsole\n- Metcon-logo at the tongue\n- Hyperlift-insert\n- Swoosh design at the heel",
+    "brand" : "nike",
+    "price" : 129.95,
+    "oldPrice" : 159.99,
+    "badge" : "new",
+    "sku" : "AQ1189-001",
+    "thumbnail" : "https://cdn.sportshop.com/media/catalog/product/cache/stores/image/540x480/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-aq1189-001_433700.jpg",
+    "color" : [
+      {
+        "colorName" : "white",
+        "colorHEX" : "#FFFFFF",
+        "images" : [
+          "https://cdn.sportshop.com/media/catalog/product/cache/stores/image/540x480/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-aq1189-010_433951.jpg",
+          "https://cdn.sportshop.com/media/catalog/product/cache/stores/image/540x480/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-aq1189-010-1_433951.jpg",
+          "https://cdn.sportshop.com/media/catalog/product/cache/stores/image/540x480/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-aq1189-010-2_433951.jpg",
+          "https://cdn.sportshop.com/media/catalog/product/cache/stores/image/540x480/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-aq1189-010-3_433951.jpg",
+          "https://cdn.sportshop.com/media/catalog/product/cache/stores/image/540x480/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-aq1189-010-4_433951.jpg",
+          "https://cdn.sportshop.com/media/catalog/product/cache/stores/image/540x480/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-aq1189-010-5_433951.jpg"
+        ]
+      },
+      {
+        "colorName": "black",
+        "colorHEX" : "#333333",
+        "images" : [
+          "https://cdn.sportshop.com/media/catalog/product/cache/stores/image/540x480/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-aq1189-001_433700.jpg",
+          "https://cdn.sportshop.com/media/catalog/product/cache/stores/image/540x480/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-aq1189-001-1_433700.jpg",
+          "https://cdn.sportshop.com/media/catalog/product/cache/stores/image/540x480/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-aq1189-001-2_433700.jpg",
+          "https://cdn.sportshop.com/media/catalog/product/cache/stores/image/540x480/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-aq1189-001-3_433700.jpg",
+          "https://cdn.sportshop.com/media/catalog/product/cache/stores/image/540x480/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-aq1189-001-4_433700.jpg",
+          "https://cdn.sportshop.com/media/catalog/product/cache/stores/image/540x480/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-aq1189-001-5_433700.jpg"
+        ]
+      }
+    ],
+    "available" : "true",
+    "size" : [36, 36.5, 37, 38, 40, 40.5, 42, 43, 46]
   }
 ]

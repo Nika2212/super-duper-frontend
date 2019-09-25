@@ -26,21 +26,15 @@ export class QuickViewComponent implements OnInit, OnDestroy {
     this.initProductItem();
   }
   public ngOnDestroy(): void {}
-  public closeQuickViewWindow(event: MouseEvent): void {
-    if (event) {
-      // Catch Overlay
-    } else {
-      this.quickViewService.setQuickViewProduct(null);
-    }
+  public closeQuickViewWindow(): void {
+    this.quickViewService.setQuickViewProduct(null);
   }
   public calculateSalePercent(): string {
     return 'save ' + (100 - (this.preSelectedProductItem.price / this.preSelectedProductItem.oldPrice * 100)).toFixed(0).toString() + '%';
   }
   public initProductItem(): void {
     this.selectedProduct = new ProductItemSelectedModel(this.preSelectedProductItem.id, this.preSelectedProductItem.colorId, this.preSelectedProductItem.sizeId, 1);
-    setTimeout(() => {
-      this.productService.getProductOption(this.preSelectedProductItem.id).subscribe((payload: ProductItemOptionModel) => this.preSelectedProductItemOption = payload);
-    }, 500);
+    this.productService.getProductOption(this.preSelectedProductItem.id).subscribe((payload: ProductItemOptionModel) => this.preSelectedProductItemOption = payload);
   }
   public selectProductColorMethod(colorId: string): void {
     this.selectedProduct.colorId = colorId;

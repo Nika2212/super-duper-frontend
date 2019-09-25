@@ -54,6 +54,12 @@ nav > div:first-child {
 .settings .language {
   margin-left: 15px !important;
 }
+.settings .language:hover {
+  text-decoration: underline;
+}
+.settings .currency:hover {
+  text-decoration: underline;
+}
 .settings .settings-dropdown {
   right: 0;
   top: 25px;
@@ -154,8 +160,14 @@ nav > div:first-child {
 .wishlist {
   margin-right: auto;
 }
+.wishlist p:hover {
+  text-decoration: underline;
+}
 .login {
 
+}
+.login p:hover {
+  text-decoration: underline;
 }
 .cart {
   padding: 15px;

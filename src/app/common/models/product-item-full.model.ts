@@ -1,15 +1,24 @@
-export class ProductsItemShortModel {
+export class ProductItemFullModel {
   constructor(
     public id: string,
     public category: string,
     public gender: string,
     public name: string,
+    public desc: string,
     public brand: string,
     public price: number,
     public oldPrice: string,
     public badge: string,
     public sku: string,
     public thumbnail: string,
-    public available: boolean
+    public color: {
+      colorName: string,
+      colorHEX: string,
+      color: {
+        url: string
+      }[],
+    }[],
+    public available: boolean,
+    public size: number[]
   ) {}
 }
