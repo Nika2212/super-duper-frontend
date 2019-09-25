@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
   public newProductsSectionProductsArrayReset(): void {
     for (let i = 0; i < 8; i++) {
-      this.newProductsSectionArray.push(new ProductsItemShortModel(null, null, null, null, null, null, null, null, false, false, null));
+      this.newProductsSectionArray.push(new ProductsItemShortModel());
     }
   }
   public offerSectionOfferArrayReset(): void {
@@ -69,12 +69,12 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
   public bestsellerSectionArrayReset(): void {
     for (let i = 0; i < 4; i++) {
-      this.bestsellerProductsSectionArray.push(new ProductsItemShortModel(null, null, null, null, null, null, null, null, false, false, null));
+      this.bestsellerProductsSectionArray.push(new ProductsItemShortModel());
     }
   }
   public featuredSectionArrayReset(): void {
     for (let i = 0; i < 4; i++) {
-      this.featuredProductsSectionArray.push(new ProductsItemShortModel(null, null, null, null, null, null, null, null, false, false, null));
+      this.featuredProductsSectionArray.push(new ProductsItemShortModel());
     }
   }
   public brandSectionArrayReset(): void {

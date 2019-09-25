@@ -9,7 +9,7 @@ import { CartPreviewService } from "./common/components/cart-preview/cart-previe
   templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
-  public preSelectedProductItem: ProductsItemShortModel = null;
+  public selectedProductItem: ProductsItemShortModel = null;
   public cartPreviewVisibilityState: boolean = false;
   public cartPreviewVisibilityAdvancedState: boolean = false;
 
@@ -21,10 +21,10 @@ export class AppComponent implements OnInit {
     this.quickViewService.getQuickViewProduct().subscribe((product: ProductsItemShortModel) => {
       if (product) {
         document.body.classList.add('object-fullscreen');
-        this.preSelectedProductItem = product;
+        this.selectedProductItem = product;
       } else {
         document.body.classList.remove('object-fullscreen');
-        this.preSelectedProductItem = null;
+        this.selectedProductItem = null;
       }
     });
     this.cartPreviewService.getCartVisibilityState().subscribe((payload: boolean) => {
